@@ -1,0 +1,21 @@
+{
+  "name": "okasaki-book",
+  "esy": {
+    "buildsInSource": "_build",
+    "build": "dune build @all"
+  },
+  "scripts": {
+    "watch": "esy b dune build @run_hello_bc -w",
+    "start": "esy b dune exec ./okasaki_test.exe"
+  },
+  "dependencies": {
+    "melange": "melange-re/melange",
+    "@opam/core_bench": "*",
+    "@opam/base": "*",
+    "@opam/ppx_jane": "*",
+    "ocaml": "4.12.x"
+  },
+  "devDependencies": {
+    "@opam/ocaml-lsp-server": "*"
+  }
+}
